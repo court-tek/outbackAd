@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<style media="screen">
+  /* desktop */
+  @media only screen and (min-width: 960px){
+    .container{
+      width: 960px;
+    }
+    .header-left{
+      padding: 36px 50px 70px !important;
+    }
+    .lets-you-row{
+      padding: 0 50px;
+    }
+    .advanced-table{
+      padding: 15px 50px 70px 50px !important;
+      background: #fff;
+    }
+
+    .oneSolution-table {
+      text-align: center;
+    }
+    .oneSolution-table img{
+      max-width: 611px;
+    }
+    .joinTogether-table .leftColumn{
+      padding: 20px 0 50px !important;
+    }
+    .joinTogether-table .middleColumn{
+      padding: 20px 0 50px !important;
+    }
+    .joinTogether-table .rightColumn{
+      padding: 20px 0 50px !important;
+    }
+    .detail-table{
+      padding: 50px 50px 25px !important;
+    }
+
+  }
+
+  /* midsize */
+  @media only screen and (max-width: 960px){
+    .container{
+      width: 600px;
+    }
+    .learn-column .left-column button {
+      margin-top: 25px !important;
+    }
+
+    .learn-area .left-column .image-area .hey {
+      padding-left: 18px !important;
+    }
+
+    .learn-area .middle-column .image-area .hey {
+      padding-left: 18px !important;
+    }
+
+    .learn-area .right-column .image-area .hey {
+      padding-left: 18px !important;
+    }
+
+    .learn-area .left-column .image-area .food-type {
+      padding-left: 18px !important;
+    }
+
+    .learn-area .middle-column .image-area .food-type {
+      padding-left: 18px !important;
+    }
+
+    .learn-area .right-column .image-area .food-type {
+      padding-left: 18px !important;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .container{
+      width: 100%;
+    }
+    .header-left{
+      width: 100%;
+    }
+    .header-right{
+      width: 100%;
+    }
+    .learn-area .left-column {
+      width: 100%;
+    }
+
+    .learn-area .middle-column{
+      width: 100%;
+    }
+    .learn-area .right-column{
+      width: 100%;
+    }
+
+    .hero-area h3 {
+      width: 70%;
+      padding-left: 50px;
+      margin: 0;
+      margin-top: 350px;
+    }
+
+    .hero-area h1 {
+      font-size: 40px !important;
+    }
+
+    .learn-area .left-column .image-area .hey {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .middle-column .image-area .hey {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .right-column .image-area .hey {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .left-column .image-area .food-type {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .middle-column .image-area .food-type {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .right-column .image-area .food-type {
+      padding-left: 40px !important;
+    }
+
+    .learn-area .left-column .image-area .hey img {
+      width: 255px !important;
+      height: 255px !important;
+    }
+
+    .learn-area .middle-column .image-area .hey img {
+      width: 255px !important;
+      height: 255px !important;
+    }
+
+    .learn-area .right-column .image-area .hey img {
+      width: 255px !important;
+      height: 255px !important;
+    }
+
+    .advanced-table .image_head{
+      width: 100%;
+    }
+    .advanced-table .left-column{
+      width: 100%;
+    }
+    .advanced-table .left-column .left-store{
+      text-align: center;
+      width: 100%;
+    }
+    .advanced-table .right-column{
+      width: 100%;
+    }
+    .advanced-table .right-column .right-store{
+      text-align: center;
+      width: 100%;
+    }
+    .joinTogether-table .leftColumn{
+      width: 100%;
+      padding: 20px 0 50px !important;
+    }
+    .joinTogether-table .middleColumn{
+      width: 100%;
+      padding: 20px 0 50px !important;
+    }
+    .joinTogether-table .rightColumn{
+      width: 100%;
+      padding: 20px 0 50px !important;
+    }
+    .detail-table .row-one .leftColumn{
+      width: 100%;
+    }
+    .detail-table .row-one .rightColumn{
+      width: 100%;
+    }
+  }
+</style>
+
+<title></title>
+<!-- <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+</style> -->
+</head>
+<body style="background: #d3d3d3;
+             font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+  <!-- Start of Html Email -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <!-- start of container -->
+        <table class="container" width="600" align="center" cellspacing="0" cellpadding="0">
+          <!-- start of main row -->
+          <tr>
+            <td>
+              <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="
+              position: relative;
+              background: url('https://images.unsplash.com/photo-1532597144951-3237ed98ab3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=376&q=80');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              color: #fff;">
+              <tr>
+                <td class="hero-area" style="border-bottom: 4px #fff solid; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                  <h3 style="margin: 0;
+                             margin-top: 350px;
+                             text-align: center;
+                             font-weight: 400;">Give Mom A Break During Black Friday With A</h3>
+                  <h1 style="margin: 0;
+                             padding: 0;
+                             line-height: .9;
+                             text-align: center;
+                             font-size: 50px;
+                             font-weight: bold;
+                             ">$100 OUTBACK</h1>
+                  <p style="margin: 0;
+                            padding: 0;
+                            text-align: center;">GIFT-CARD</p>
+                  <p style="margin: 0;
+                            display: block;
+                            text-align: center;
+                            margin-bottom: 22px;">Share Your Opinion To Win a Treat On Us</p>
+                  <div style="
+                              margin: 0 auto;
+                              text-align: center;
+                              background: orange;
+                              width: 180px;
+                              height: 50px;">
+                    <a href="" style="display: inline-block;
+                                      margin-top: 15px;
+                                      font-size: 16px;
+                                      font-weight: 500;
+                                      text-decoration: none;
+                                      color: #202020;">
+                                      Learn More</a><br />
+                  </div>
+                  <div style="text-align: center;
+                              margin-top: 12px;
+                              margin-bottom: 30px;">
+                    <a href="" style="color: #fff;">gift-card is one of multiple rewards</a>
+                  </div>
+                </td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of main row -->
+          <tr>
+            <td class="learn-area" style="background: #a3260a;">
+              <div style="border-top: 4px #fff solid;
+                          width: 100%;
+                          margin-top: 8px; "></div>
+              <p style="text-align: center;
+                        color: #fff;
+                        font-size: 25px;
+                        font-weight: 600;">What would you like for Black Friday's dinner?</p>
+              <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="image-area" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0;">
+                      <tr>
+                        <td class="hey" align="center" style="padding-left: 66px;">
+                            <img style="
+                              border: 2.5px #fff solid;
+                              text-align: center;
+                              width: 147px;
+                              height: 147px;
+                              border-radius: 55%;
+                              "src="https://assets.epicurious.com/photos/57c5c1fbcf9e9ad43de2d96c/2:1/w_1260%2Ch_630/steak-frites.jpg">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="food-type" style="padding-left: 66px;">
+                          <p style="
+                          color: #fff;
+                          font-weight: 600;
+                          font-size: 16px;
+                          text-align: center;
+                          text-transform: uppercase;
+                          ">Steak</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="text-align: center;
+                              font-size: 18px;
+                              color: #fff;">Our steaks are cooked to perfection</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button style="
+                      display: block;
+                      background: #fff;
+                      margin: 0 auto;
+                      border: 2px #ccc solid;
+                      color: #202020;
+                      width: 100px;
+                      height: 36px;
+                      font-weight: 500;
+                      text-align: center;">
+                      Read more
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <table class="middle-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="image-area" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      style="padding: 0;">
+                      <tr>
+                        <td class="hey" valign="middle" align="center" style="padding-left: 66px;">
+                            <img style="
+                              border: 2.5px #fff solid;
+                              text-align: center;
+                              width: 147px;
+                              height: 147px;
+                              border-radius: 55%;
+                              "src="https://www.cookingclassy.com/wp-content/uploads/2015/07/grilled-greek-lemon-chicken14-srgb.-500x375.jpg">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="food-type" style="padding-left: 66px;">
+                          <p style="
+                          color: #fff;
+                          text-align: center;
+                          font-weight: 600;
+                          font-size: 16px;
+                          text-transform: uppercase;
+                          ">Chicken</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="text-align: center;
+                              font-size: 18px;
+                              color: #fff;">Seasoned with only the best spices.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button style="
+                      display: block;
+                      background: #fff;
+                      margin: 0 auto;
+                      border: 2px #ccc solid;
+                      color: #202020;
+                      width: 100px;
+                      height: 36px;
+                      font-weight: 500;
+                      text-align: center;">
+                      Read more
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
+                <tr>
+                  <td>
+                    <table class="image-area" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      style="padding: 0;">
+                      <tr>
+                        <td class="hey" valign="middle" align="center" style="padding-left: 66px;">
+                            <img style="
+                              border: 2.5px #fff solid;
+                              text-align: center;
+                              width: 147px;
+                              height: 147px;
+                              border-radius: 55%;
+                              "src="https://www.great-alaska-seafood.com/products496/15-coho_fillet_plated-2_496x453.jpg">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="food-type" style="padding-left: 66px;">
+                          <p style="
+                          color: #fff;
+                          font-weight: 600;
+                          text-align: center;
+                          font-size: 16px;
+                          text-transform: uppercase;
+                          ">Fish</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="text-align: center;
+                              font-size: 18px;
+                              color: #fff;">Enjoy the best that the sea has to offer.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button style="
+                      display: block;
+                      background: #fff;
+                      margin: 0 auto;
+                      border: 2px #ccc solid;
+                      color: #202020;
+                      width: 100px;
+                      height: 36px;
+                      font-weight: 500;
+                      text-align: center;">
+                      Read more
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of cta area 2 -->
+          <!-- Start of footer -->
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <p>This is an advertisement. Outback is a trademark who is not affiliated with this promotion</p> <br>
+                    <p>Head game lovely, IQ off the chart.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of footer -->
+        </table>
+        <!-- end of container -->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
